@@ -28,7 +28,7 @@
 - `wkhtmltopdf -O $A_ROTATE --page-width $A_MM_W  --page-height $A_MM_H --margin-right 0 --margin-left 0 --margin-top 0 --margin-bottom 0 --enable-local-file-access A{0,10}_format_pdf_$A_ROTATE.html file.pdf`
 
 - Example : (CLASSIC A4 PORTAIT FORMAT)
-	- `wkhtmltopdf -O Portrait --page-width 210  --page-height 297à --margin-right 0 --margin-left 0 --margin-top 0 --margin-bottom 0 --enable-local-file-access A4_format_pdf_portrait.html file.pdf`
+	- `wkhtmltopdf -O Portrait --page-width 210  --page-height 297 --margin-right 0 --margin-left 0 --margin-top 0 --margin-bottom 0 --enable-local-file-access A4_format_pdf_portrait.html file.pdf`
 
 - Example : (CLASSIC A4 LANDSCAPE FORMAT)
 	- `wkhtmltopdf -O Landscaope --page-width 210  --page-height 297 --margin-right 0 --margin-left 0 --margin-top 0 --margin-bottom 0 --enable-local-file-access A4_format_pdf_landscape.html file.pdf`

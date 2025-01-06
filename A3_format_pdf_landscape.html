@@ -5,14 +5,14 @@
     <meta name="author" content="chriSmile0">
     <meta name="description" content="CV">
     <meta charset="UTF-8">
-	<!--format 297 x 210 mm for A4 landscape format for print -->
-	<!--format .page = 420 x 290 mm for A4 landscape format perfect 70% fit -->
+	<!--format 297 x 420 mm for A4 format for print -->
+	<!--format .page = 290 x 420 mm for A4 format perfect 100% fit -->
     <!--<link href="style.css" rel="stylesheet"/>-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" 
           rel="stylesheet">
 	<link rel="stylesheet" 
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>A4_LANDSCAPE</title>
+    <title>A3_PORTRAIT</title>
 </head>
 
 <body>
@@ -220,7 +220,7 @@
 }
 
 html {
-	width:430mm;
+	width:600mm;
 }
 
 /**********************************HEADER**************************************/
@@ -228,13 +228,13 @@ html {
 
 /********************************BODY******************************************/
 .page {
-	width:420mm;
+	width:588mm;
 	border:solid white;
 	margin: auto auto 0mm auto;
 }
 
 .container {
-	border:solid var(--bg-white);
+	border:solid var(--bg-red);
 	margin: 3mm auto 3mm auto;
 	padding: 3mm auto 3mm auto;
 	height:99%;
@@ -243,20 +243,20 @@ html {
 .content {
 	width:98%;
 	height:98%;
-	border:solid var(--bg-white);
+	border:solid var(--bg-green);
 	margin: 12px auto auto auto;
 }
 
 .content > .items_container {
 	width:98%;
 	height:98%;
-	border:dashed 2px;
+	border:dashed 2px var(--bg-white);
 	margin: 1.2% auto auto auto;
 }
 
 
 #first_page {
-	height:290mm;
+	height:420mm;
 }
 
 #first_page .items {
@@ -269,11 +269,11 @@ html {
 
 .middle_page {
 	margin-top: 10mm;
-	height:292.5mm;
+	height:422.0mm;
 }
 
 #last_page {
-	height:290mm;
+	height:420mm;
 }
 
 .page > .content > h3 {
@@ -282,6 +282,6 @@ html {
 
 </style>
 <!-- 
-	wkhtmltopdf -O Landscape --page-width 210  --page-height 297 --margin-right 0 --margin-left 0 --margin-top 0 --margin-bottom 0 --enable-local-file-access A4_format_pdf_landscape.html generated_pdfs/file_a4_l.pdf
+	wkhtmltopdf -O Landscape --page-width 297  --page-height 420 --margin-right 0 --margin-left 0 --margin-top 0 --margin-bottom 0 --enable-local-file-access A3_format_pdf_landscape.html generated_pdfs/file_a3_l.pdf
 -->
 </html>
