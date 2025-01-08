@@ -25,10 +25,25 @@
 - `A_ROTATE = {Portrait,Landscape}`
 - In our case it's necessary to change the ROTATE but not the A_MM for the 
 	equality between the landscape format and the portrait format.
-- `wkhtmltopdf -O $A_ROTATE --page-width $A_MM_W  --page-height $A_MM_H --margin-right 0 --margin-left 0 --margin-top 0 --margin-bottom 0 --enable-local-file-access $A_rotate/A{0,10}_format_pdf_$A_ROTATE.html file.pdf`
+- `wkhtmltopdf -O $A_ROTATE --page-width $A_MM_W  --page-height $A_MM_H --margin-right 0 --margin-left 0 --margin-top 0 --margin-bottom 0 --enable-local-file-access $A_rotate/A{0,10}_format_pdf_$A_ROTATE.html ../generated_pdfs/file.pdf`
 
 - Example : (CLASSIC A4 PORTAIT FORMAT)
-	- `wkhtmltopdf -O Portrait --page-width 210  --page-height 297 --margin-right 0 --margin-left 0 --margin-top 0 --margin-bottom 0 --enable-local-file-access Portrait/A4_format_pdf_portrait.html file.pdf`
+	- `wkhtmltopdf -O Portrait --page-width 210  --page-height 297 --margin-right 0 --margin-left 0 --margin-top 0 --margin-bottom 0 --enable-local-file-access Portrait/A4_format_pdf_portrait.html ../generated_pdfs/file.pdf`
 
 - Example : (CLASSIC A4 LANDSCAPE FORMAT)
-	- `wkhtmltopdf -O Landscaope --page-width 210  --page-height 297 --margin-right 0 --margin-left 0 --margin-top 0 --margin-bottom 0 --enable-local-file-access Landscape/A4_format_pdf_landscape.html file.pdf`
+	- `wkhtmltopdf -O Landscaope --page-width 210  --page-height 297 --margin-right 0 --margin-left 0 --margin-top 0 --margin-bottom 0 --enable-local-file-access Landscape/A4_format_pdf_landscape.html ../generated_pdfs/file.pdf`
+
+## Version 
+
+### V1.0
+- Maybe a final version of this product 
+- Just use this and enjoy when your perfect creation/design/writable document is perfectly printable in different Ax paper format
+- Create element in HTML and show the render for the target Ax paper format : 
+	- Postcard
+	- Ticket 
+	- A4
+	- Drawing paper
+	- Plan Paper -> (check [drawio](https://app.diagrams.net/) for your most beautiful UML/Architecture plans/Map)
+- Next version maybe with easiest builder
+
+## Features 
