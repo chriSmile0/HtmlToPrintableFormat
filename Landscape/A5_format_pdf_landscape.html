@@ -12,7 +12,7 @@
           rel="stylesheet">
 	<link rel="stylesheet" 
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>CHRIS MAIL 3</title>
+    <title>A5_LANDSCAPE</title>
 </head>
 
 <body>
@@ -215,10 +215,12 @@
 :root {
 	--bg-red:#ff3d3f; 	/* BACKGROUND ROUGE*/
 	--bg-green:#bed54f; /* BACKGROUND VERT */
+	--bg-white: #ffffff; /* BACKGROUND BLANC */
+	--bg-black: #000000; /* BACKGROUND NOIR */
 }
 
 html {
-	width:430mm;
+	width:307mm;
 }
 
 /**********************************HEADER**************************************/
@@ -226,7 +228,7 @@ html {
 
 /********************************BODY******************************************/
 .page {
-	width:420mm;
+	width:297mm;
 	border:solid white;
 	margin: auto auto 0mm auto;
 }
@@ -239,22 +241,22 @@ html {
 }
 
 .content {
-	width:98%;
-	height:98%;
+	width:98.5%;
+	height:98.3%;
 	border:solid var(--bg-green);
-	margin: 12px auto auto auto;
+	margin:0.3% auto auto 0.5%;
 }
 
 .content > .items_container {
-	width:98%;
-	height:98%;
-	border:dashed 2px;
-	margin: 1.2% auto auto auto;
+	width:99.4%;
+	height:99%;
+	border:dashed 2px var(--bg-black);
+	margin:0.2% auto auto auto;
 }
 
 
 #first_page {
-	height:290mm;
+	height:203mm;
 }
 
 #first_page .items {
@@ -267,11 +269,12 @@ html {
 
 .middle_page {
 	margin-top: 10mm;
-	height:292.5mm;
+	height:205.5mm;
 }
 
 #last_page {
-	height:290mm;
+	margin-top: 10mm;
+	height:203mm;
 }
 
 .page > .content > h3 {
@@ -280,6 +283,6 @@ html {
 
 </style>
 <!-- 
-	wkhtmltopdf -O Landscape --page-width 210  --page-height 297 --margin-right 0 --margin-left 0 --margin-top 0 --margin-bottom 0 --enable-local-file-access A4_format_html.html file.pdf
+	wkhtmltopdf -O Landscape --page-width 148  --page-height 210 --margin-right 0 --margin-left 0 --margin-top 0 --margin-bottom 0 --enable-local-file-access A5_format_pdf_landscape.html ../generated_pdfs/file_a5_l.pdf
 -->
 </html>
