@@ -234,24 +234,24 @@ html {
 }
 
 .container {
-	border:solid var(--bg-white);
+	border:solid var(--bg-red);
 	margin: 3mm auto 3mm auto;
 	padding: 3mm auto 3mm auto;
 	height:99%;
 }
 
 .content {
-	width:98%;
+	width:99%;
 	height:98%;
-	border:solid var(--bg-white);
-	margin: 12px auto auto auto;
+	border:solid var(--bg-green);
+	margin:0.4% auto auto 0.3%;
 }
 
 .content > .items_container {
-	width:98%;
-	height:98%;
-	border:dashed 2px var(--bg-white);
-	margin: 1.2% auto auto auto;
+	width:99.5%;
+	height:99.4%;
+	border:dashed 2px var(--bg-black);
+	margin:0.1% auto auto auto;
 }
 
 
@@ -282,6 +282,6 @@ html {
 
 </style>
 <!-- 
-	wkhtmltopdf -O Landscape --page-width 210  --page-height 297 --margin-right 0 --margin-left 0 --margin-top 0 --margin-bottom 0 --enable-local-file-access A4_format_pdf_landscape.html generated_pdfs/file_a4_l.pdf
+	wkhtmltopdf -O Landscape --page-width 210  --page-height 297 --margin-right 0 --margin-left 0 --margin-top 0 --margin-bottom 0 --enable-local-file-access A4_format_pdf_landscape.html ../generated_pdfs/file_a4_l.pdf
 -->
 </html>
